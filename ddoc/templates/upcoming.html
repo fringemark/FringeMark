@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FringeMark</title>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" type="text/css">
+  <style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .centerable { 
+      margin-left:auto; 
+      margin-right:auto; 
+      text-align: center;
+  }
+  .orange-caret {
+    border-top: 4px solid #FC0;
+  }
+  </style>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap-responsive.css" type="text/css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="caret orange-caret" ></span>
+        </a>
+        <a class="brand" href="#"><img src="../../img/logotype-20.png" /></a>
+        <div class="btn-group pull-right">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="badge badge-warning">4</span> @cdcarter
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Upcoming</a></li>
+            <li><a href="#full">Full Schedule</a></li>
+            <li><a href="#leaderboard">Leaderboard</a></li>
+            <li><a href="#badges">Badges</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <header class="jumbotron subhead" id="overview">
+      <h2>Next show: {{slot}}</h2>
+    </header>
+    <div class="row-fluid">
+      <div class="span4">
+        <h3>Uptown</h3>
+        <table class="table table-striped table-condensed">
+          <thead><tr><th>Venue</th><th>Show</th></tr></thead>
+          <tbody>
+            {{#Bryant-Lake Bowl}}<tr><td>Bryant-Lake Bowl</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Bryant-Lake Bowl}}
+            {{#Cult Status}}<tr><td>Cult Status</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Cult Status}}
+            {{#HUGE Theater}}<tr><td>HUGE Theater</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/HUGE Theater}}
+            {{#Intermedia Arts}}<tr><td>Intermedia Arts</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Intermedia Arts}}
+            {{#Theatre Garage}}<tr><td>Theatre Garage</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Theatre Garage}}
+          </tbody>
+        </table>
+      </div><!--/span-->
+      <div class="span4">
+        <h3>West Bank</h3>
+        <table class="table table-striped table-condensed">
+          <thead><tr><th>Venue</th><th>Show</th></tr></thead>
+          <tbody>
+            {{#Augsburg Mainstage}}<tr><td>Augsburg Mainstage</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Augsburg Mainstage}}
+            {{#Augsburg Studio}}<tr><td>Augsburg Studio</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Augsburg Studio}}
+            {{#Gremlin Theatre}}<tr><td>Gremlin Theatre</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Gremlin Theatre}}
+            {{#Mixed Blood}}<tr><td>Mixed Blood</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Mixed Blood}}
+            {{#Playwrights' Center}}<tr><td>Playwrights' Center</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Playwrights' Center}}
+            {{#Theatre in the Round}}<tr><td>Theatre in the Round</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Theatre in the Round}}
+            {{#U of M Rarig Arena}}<tr><td>U of M Rarig Arena</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/U of M Rarig Arena}}
+            {{#U of M Rarig Proscenium}}<tr><td>U of M Rarig Proscenium</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/U of M Rarig Proscenium}}
+            {{#U of M Rarig Thrust}}<tr><td>U of M Rarig Thrust</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/U of M Rarig Thrust}}
+            {{#U of M Rarig Xperimental}}<tr><td>U of M Rarig Xperimental</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/U of M Rarig Xperimental}}
+          </tbody>
+        </table>
+        
+      </div><!--/span-->
+      <div class="span4">
+        <h3>Downtown</h3>
+        <table class="table table-striped table-condensed">
+          <thead><tr><th>Venue</th><th>Show</th></tr></thead>
+          <tbody>
+            {{#Kierans}}<tr><td>Kierans</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Kierans}}
+            {{#Lab}}<tr><td>Lab</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Lab}}
+            {{#Mill City Museum}}<tr><td>Mill City Museum</td><td><a href="../more/{{id}}">{{name}}</a></td></tr>{{/Mill City Museum}}
+          </tbody>
+        </table>        
+      </div><!--/span-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer>
+      <p>&copy; FringeMark 2012</p>
+    </footer>
+  </div>
+</body>
+<script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+</html>
