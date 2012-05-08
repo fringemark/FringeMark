@@ -1,0 +1,20 @@
+<header class="jumbotron subhead" id="overview">
+  <h2>Next show: {{slot}}</h2>
+</header>
+
+<div class="row-fluid">
+  
+  {{#neighborhoods}}
+    <div class="span4">
+      <h3>{{name}}</h3>
+      <table class="table table-striped table-condensed">
+        <thead><tr><th>Venue</th><th>Show</th></tr></thead>
+          {{#venues}}
+            <tr><td>{{name}}</td><td>{{show}}</td></tr>
+          {{/venues}}
+        <tbody>
+        </tbody>
+      </table>
+    </div><!--/span-->
+  {{/neighborhoods}}
+</div><!--/row-->

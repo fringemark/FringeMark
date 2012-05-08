@@ -1,0 +1,70 @@
+module FringeMark
+  DATABASE = "http://localhost:5984/fringemarkdev1"
+
+  NEIGHBORHOODS = {
+    "Uptown" => ["Bryant-Lake Bowl","Cult Status","HUGE Theater","Intermedia Arts","Theatre Garage"],
+    "West Bank" => [
+      "Augsburg Mainstage","Augsburg Studio","Gremlin Theatre","Mixed Blood","Playwrights' Center","Theatre in the Round",
+      "U of M Rarig Arena","U of M Rarig Proscenium","U of M Rarig Thrust","U of M Rarig Xperimental"
+    ],
+    "Downtown" => ["Kierans","Lab","Mill City Museum"]
+  }
+  
+  SLOTS = {
+    "1" => ["August 4th","5:30 PM"],
+    "2" => ["August 4th","7:00 PM"],
+    "3" => ["August 4th","8:30 PM"],
+    "4" => ["August 4th","10:00 PM"],
+    "5" => ["August 5th","5:30 PM"],
+    "6" => ["August 5th","7:00 PM"],
+    "7" => ["August 5th","8:30 PM"],
+    "8" => ["August 5th","10:00 PM"],
+    "9" => ["August 6th","1:00 PM"],
+    "10" => ["August 6th","2:30 PM"],
+    "11" => ["August 6th","4:00 PM"],
+    "12" => ["August 6th","5:30 PM"],
+    "13" => ["August 6th","7:00 PM"],
+    "14" => ["August 6th","8:30 PM"],
+    "15" => ["August 6th","10:00 PM"],
+    "16" => ["August 7th","1:00 PM"],
+    "17" => ["August 7th","2:30 PM"],
+    "18" => ["August 7th","4:00 PM"],
+    "19" => ["August 7th","5:30 PM"],
+    "20" => ["August 7th","7:00 PM"],
+    "21" => ["August 7th","8:30 PM"],
+    "22" => ["August 7th","10:00 PM"],
+    "23" => ["August 8th","5:30 PM"],
+    "24" => ["August 8th","7:00 PM"],
+    "25" => ["August 8th","8:30 PM"],
+    "26" => ["August 8th","10:00 PM"],
+    "27" => ["August 9th","5:30 PM"],
+    "28" => ["August 9th","7:00 PM"],
+    "29" => ["August 9th","8:30 PM"],
+    "30" => ["August 9th","10:00 PM"],
+    "31" => ["August 10th","5:30 PM"],
+    "32" => ["August 10th","7:00 PM"],
+    "33" => ["August 10th","8:30 PM"],
+    "34" => ["August 10th","10:00 PM"],
+    "35" => ["August 11th","5:30 PM"],
+    "36" => ["August 11th","7:00 PM"],
+    "37" => ["August 11th","8:30 PM"],
+    "38" => ["August 11th","10:00 PM"],
+    "39" => ["August 12th","4:00 PM"],
+    "40" => ["August 12th","5:30 PM"],
+    "41" => ["August 12th","7:00 PM"],
+    "42" => ["August 12th","8:30 PM"],
+    "43" => ["August 12th","10:00 PM"],
+    "44" => ["August 13th","1:00 PM"],
+    "45" => ["August 13th","2:30 PM"],
+    "46" => ["August 13th","4:00 PM"],
+    "47" => ["August 13th","5:30 PM"],
+    "48" => ["August 13th","7:00 PM"],
+    "49" => ["August 13th","8:30 PM"],
+    "50" => ["August 13th","10:00 PM"],
+    "51" => ["August 14th","1:00 PM"],
+    "52" => ["August 14th","2:30 PM"],
+    "53" => ["August 14th","4:00 PM"],
+    "54" => ["August 14th","5:30 PM"],
+    "55" => ["August 14th","7:00 PM"]
+  }
+end
